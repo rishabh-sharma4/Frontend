@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AJAX</title>
+        <meta name="author" value="Rishabh">
+        <meta name="keywords" value="AJAX, JS">
+        <meta charset="UTF-8">
+        <meta name="description" value="AJAX">
+        <meta http-equiv="refresh" value="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="a01">
+        <p>Lets learn AJAX</p>
+        <button onclick="changetext()">Click</button>
+        </div>
+        <script>
+            function changetext(){
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload= function(){
+                    document.getElementById("a01").innerHTML=this.responseText;
+                }
+                xhttp.open('GET',"word1.txt");
+                xhttp.send();
+            }
+        </script>
+    </body>
+
+</html>

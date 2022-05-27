@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Navigation Bar</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Rishabh Sharma">
+        <meta name="keywords" content="Navigation, Bar">
+        <meta name="description" content="Navigation Bar in HTML AND CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <style>
+            a {
+                text-decoration: none;
+                color:white;
+                display:block;
+            }
+            .horizontal {
+                list-style-type: none;
+                display:inline-block;
+                padding: 10px;
+            }
+            .one {
+                background-color: black;
+                
+            }
+            .two {
+                background-color: cornflowerblue;
+            }
+            li:hover {
+                background-color: red;
+                
+            }
+            .vertical {
+                list-style-type: none;
+                display:block;
+                padding: 10px;
+                
+            }
+           
+            
+        </style>
+    </head>
+    <body>
+        <ul class="one">
+            <li class="horizontal"><a href="#">News</a></li>
+            <li class="horizontal"><a href="#">About US</a></li>
+            <li class="horizontal"><a href="#">Contact US</a></li>
+        </ul>
+        <ul class="two">
+            <li class="vertical"><a href="#">News</a></li>
+            <li class="vertical"><a href="#">About US</a></li>
+            <li class="vertical"><a href="#">Contact US</a></li>
+        </ul>
+        
+    </body>
+
+</html>

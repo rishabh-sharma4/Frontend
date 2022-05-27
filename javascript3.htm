@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>DOM nodes using JS</title>
+        <meta name="author" content="Rishabh">
+        <meta charset="UTF-8">
+        <meta name="description" content="DOM nodes access using JS">
+        <meta name="keywords" content="DOM, Nodes">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>Lets see how we can access DOM nodes using JS</p>
+        <div id="div1">
+            <p id="p1">This is a paragraph</p>
+            <p id="p2">This is another paragraph</p>
+        </div>
+        <button onclick="rem()">Remove</button>
+        <script>
+            const para = document.createElement("p");//created p tag
+            const node = document.createTextNode("This is third paragraph");//created text node
+            para.appendChild(node); //added text node as child of p tag
+
+            const element = document.getElementById("div1");
+            element.appendChild(para);
+
+            const para1 = document.createElement("p");
+            const node1 = document.createTextNode("This is 0 paragraph");
+            para1.appendChild(node1);
+
+            const element1 = document.getElementById("div1");
+            const child = document.getElementById("p1");
+            element1.insertBefore(para1,child);
+
+            const element2 = document.getElementById("p2");
+            element1.insertBefore(element2, child);
+            
+            const myCollection = document.getElementsByTagName("p"); //returns an HTMLCollection object. It is array-like list(collection)
+            console.log(myCollection[2].innerHTML);
+            console.log(myCollection.length);// number of elements in HTMLCollection.
+
+            function rem(){
+                document.getElementById("p1").remove();
+            }
+            
+        </script>
+    </body>
+</html>

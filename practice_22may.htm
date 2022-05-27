@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>HTML and CSS</title>
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+    <link rel="stylesheet" href="practice22.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Rishabh Sharma">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="HTML and CSS practice">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://www.w3schools.com/" target="_blank">
+</head>
+
+<body>
+    <h1 id="top1">Let's practice HTML and CSS</h1>
+    <p>Here we are going to use HTML and CSS studied till date.</p>
+    <hr />
+    <p>There are some HTML elements which are empty i.e. they don't have end tag,
+        like &lt;br&gt;</p>
+    <hr />
+    <p>In p tag if we write text with whitespaces the text is displayed by removing extra
+        spaces. To solve this issue we use pre tag.
+    </p>
+    <pre>
+            This is my poem,
+
+            This is written after leaving    2 lines and many whitespaces.
+        </pre>
+    <hr />
+    <p style="background-color: aqua;">
+        We can use css within the element, it is known as inline CSS</p>
+    <p style="color:red;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 150%; text-align: center;">
+        In the same way the font-color can also be changed for the specific element</p>
+    <hr />
+    <!--Border with colors-->
+    <p style="border:2px solid red">This text is surrounded by border</p>
+    <h3 style="background-color: rgba(255,0,0,0.7); text-align: center;">Color RGBA</h3>
+    <h3 style="background-color: #00ff00;">Color HEX</h3>
+    <h3 style="background-color: hsla(0, 100%, 40%, 0.6);">Color HSLA</h3>
+    <!--Starting url being appended from base URL at top-->
+    <a href="images/stickman.gif">Image</a><br />
+    <a href="mailto:someone@example.com" title="Send Email">Send Email</a><br />
+    <button onclick="document.location='html/html_links.asp'">HTML Tutorial</button><br />
+    <hr />
+    <a href="#link1">Link1</a><br /><br />
+    <!--ComputerCode-->
+    <div style="border: 2px solid black; padding:10px;">
+        <p style="background-color: yellowgreen;">Computer Code using code and samp tag</p>
+        <code>
+            x = 5;
+            y = 6;
+            z = x + y;
+        </code>
+    </div>
+
+    <hr />
+
+    <br />
+    <!--KeyboardTag-->
+    <div style="border: 2px solid black; padding:10px;">
+        <p style="background-color: yellowgreen;">Keyboard input using kbd tag, content is
+            displayed in monospace font
+        </p>
+        <kbd>CTRL+S</kbd>
+    </div>
+
+    <hr />
+    <br />
+    <!--VariableTag-->
+    <div style="border: 2px solid black; padding:10px;">
+        <p style="background-color: yellowgreen;">To type a variable in programing/mathematical
+            language use var tag and is displayed in italic
+        </p>
+        <p>equation=<var>ABC</var>*<var>BCD</var></p>
+    </div>
+
+    <hr />
+    <br />
+
+    <!--SemanticElement-->
+    <div style="border: 2px solid black; padding:10px;">
+        <h2 style="color:blue; background-color:yellow;">Sementic Element</h2>
+        <p>A semantic element clearly describes its meaning to both the browser and the developer.
+            Examples of non-semantic elements: div and span - Tells nothing about its content.
+            Examples of semantic elements: form, table, and article - Clearly defines its content.
+        </p>
+    </div>
+
+    <br />
+    <hr />
+
+    <!--CharacterEntities-->
+    <div style="border: 2px solid black; padding:10px;">
+        <h2 style="color:blue; background-color:yellow;">HTML Entities</h2>
+        <p>Some characters are reserved in HTML. If you use the less than or greater than signs in your text,
+            the browser might mix them with tags. Character entities are used to display reserved characters in HTML.
+            To display a less than sign we must write: & lt or & #60
+        </p>
+    </div>
+    <br />
+    <hr />
+  
+    <!--Web Storage-->
+    <div style="border: 2px solid black; padding:10px;">
+        <h2 style="color:blue; background-color:yellow;">HTML Web Storage</h2>
+        <p>With web storage, web applications can store data locally within the user's browser.
+           Before HTML5, application data had to be stored in cookies, included in every server request.
+           Web storage is more secure, and large amounts of data can be stored locally, without affecting website performance.
+           Unlike cookies, the storage limit is far larger (at least 5MB) and information is never transferred to the server.
+           Web storage is per origin (per domain and protocol). All pages, from one origin, can store and access the same data.
+        </p>
+    </div>
+    <br />
+    <hr />
+
+    <!--Web Workers-->
+    <div style="border: 2px solid black; padding:10px;">
+        <h2 style="color:blue; background-color:yellow;">HTML Web Workers</h2>
+        <p>A web worker is a JavaScript running in the background, without affecting the performance of the page.
+            When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.
+            Since web workers are in external files, they do not have access to the following JavaScript objects:
+            <ol>
+                <li>The window object</li>
+                <li>The document object</li>
+                <li>The parent object</li>
+            </ol>
+        </p>
+    </div>
+    <br />
+    <hr />
+
+     <!--Web Server Sent Events-->
+     <div style="border: 2px solid black; padding:10px;">
+        <h2 style="color:blue; background-color:yellow;">HTML Server Sent Events(One Way Messaging)</h2>
+        <p>Server-Sent Events (SSE) allow a web page to get updates from a server. A server-sent event is when a web page automatically 
+            gets updates from a server. This was also possible before, but the web page would have to ask if any updates were available.
+            With server-sent events, the updates come automatically. Examples: Facebook/Twitter updates, stock price updates, news feeds,
+            sport results, etc. The <strong>EventSource object is used to receive server-sent event notifications</strong>
+        </p>
+    </div>
+    <br />
+    <hr />
+
+     <!--HTML Accessibility-->
+     <div style="border: 2px solid black; padding:10px;">
+        <h2 style="color:blue; background-color:yellow;">HTML Accessibility</h2>
+        <p> HTML Accessibility main points:
+            <ol>
+                <li>Make your HTML code as semantic as possible.</li>
+                <li>Search engines use the headings to index the structure and content of your web pages.</li>
+                <li>The value of the alt attribute should describe the image:</li>
+                <li>You should always include the lang attribute inside the html tag, to declare the language of the Web page.<br/>
+                    This is meant to assist search engines and browsers.</li>
+                <li>A link text should explain clearly what information the reader will get by clicking on that link.</li>
+                <li>The title attribute specifies extra information about an element.<br/>
+                    The information is most often shown as a tooltip text when the mouse moves over the element.</li>
+                
+            </ol>
+        </p>
+    </div>
+    <br />
+    <hr />
+
+    <!--URL Uniform Resource Locator-->
+    <div style="border: 2px solid black; padding:10px;">
+        <h2 style="color:blue; background-color:yellow;">URL-Uniform Resource Locator</h2>
+        <p>Web browsers request pages from web servers by using a URL. 
+            <h3>URL Encoding (Percent Encoding)</h3>
+            <ol>
+                <li>URL encoding converts characters into a format that can be transmitted over the Internet.</li>
+                <li>URLs can only be sent over the Internet using the <strong>ASCII character-set</strong></li>
+                <li>Since URLs often contain characters outside the ASCII set, the URL has to be converted into a valid ASCII format.</li>
+                <li>URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits.</li>
+                <li>URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign or with %20.</li>
+                <li>In JavaScript you can use the encodeURIComponent() function to encode a string</li>
+            </ol>
+        </p>
+    </div>
+
+    <br />
+    <hr />
+
+    <!--HTML Status Message-->
+    <div style="border: 2px solid black; padding:10px;">
+        <h2 style="color:blue; background-color:yellow;">HTML Status Message</h2>
+        <p>When a browser requests a service from a web server, an error might occur,<br/>
+           and the server might return an error code like "404 Not Found".server always returns a message for every request. <br/>
+           The most common message is 200 OK.
+           <ol>
+               <li>1xx:Information</li>
+               <li>2xx:Successful</li>
+               <li>3xx:Redirection</li>
+               <li>4xx:Client Error</li>
+               <li>5xx:Server Error</li>
+           </ol>
+        </p>
+    </div>
+    <br />
+    <hr />
+
+     <!--HTTP-->
+     <div style="border: 2px solid black; padding:10px;">
+        <h2 style="color:blue; background-color:yellow;">HTTP</h2>
+        <p>The Hypertext Transfer Protocol (HTTP) is designed to enable communications between clients and servers.<br/>
+            A client (browser) sends an HTTP request to the server; then the server returns a response to the client. <br/>
+            The response contains <strong>status information</strong> about the request and may also contain the
+            <strong>requested content.</strong>
+        </p>
+    </div>
+
+    <br />
+    <hr />
+    
+
+    <!--HTML Canvas-->
+    <div style="border: 2px solid black; padding:10px;">
+        <h2 style="color:blue; background-color:yellow;">HTML Canvas</h2>
+        <p>The HTML canvas element is used to draw graphics, on the fly, via JavaScript.
+            The canvas element is only a container for graphics.
+            You must use JavaScript to actually draw the graphics.
+        </p>
+    </div>
+
+    <br />
+    <hr />
+
+    <canvas id="myCanvas" width="300" height="300" style="border: 2px solid black;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+    <p style="float: right;">This is example of CANVAS in HTML</p>
+    <br />
+    <hr />
+
+     <!--Video tag is used to show a video on webpage-->
+     <div style="text-align: center;">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br/><br/>
+        <video id="video1" width="475" controls autoplay muted>
+            <source src="C:\Users\rishabh.u.sharma\Desktop\FrontEnd\mov_bbb.mp4" type="video/mp4">
+            Your browser does not support HTML video
+        </video>
+    </div>
+
+    <br />
+    <hr />
+
+    <iframe width="600" height="350" style="margin: auto; display: block;"
+    src="https://www.youtube.com/embed/PqFMFVcCZgI">
+    </iframe>
+
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0, 0);
+        ctx.lineTo(300, 300);
+        ctx.stroke();
+
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if(myVideo.paused)
+            myVideo.play();
+            else
+            myVideo.pause();
+        }
+        function makeBig() {
+            myVideo.width= 560;
+        }
+        function makeSmall() {
+            myVideo.width= 300;
+        }
+        function makeNormal() {
+            myVideo.width= 475;
+        }
+    </script>
+   
+    <!--Here I had to use absolute URL because if I use relative URL it becomes relative to
+        base URL mentioned above in the head section -->
+    <a href="C:\Users\rishabh.u.sharma\Desktop\FrontEnd\practice_22may.htm#top1" target="_self">
+        Go to Top</a>
+    <a href="C:\Users\rishabh.u.sharma\Desktop\FrontEnd\images.htm" style="float:right;">Images in HTML</a><br /><br />
+    <a href="C:\Users\rishabh.u.sharma\Desktop\FrontEnd\tables.htm">Tables in HTML</a><br />
+    <a href="C:\Users\rishabh.u.sharma\Desktop\FrontEnd\list.htm">List in HTML</a><br />
+    <a href="C:\Users\rishabh.u.sharma\Desktop\FrontEnd\layout.htm">Layout in HTML</a><br />
+    <a href="C:\Users\rishabh.u.sharma\Desktop\FrontEnd\forms.htm">Forms in HTML</a><br />
+    <a href="C:\Users\rishabh.u.sharma\Desktop\FrontEnd\dragndrop.htm">Drag and Drop</a><br/>
+    <a href="C:\Users\rishabh.u.sharma\Desktop\FrontEnd\webstorage.htm">Web Storage in HTML</a>
+</body>
+
+</html>

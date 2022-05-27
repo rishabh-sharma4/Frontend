@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>List in HTML</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="List in HTML">
+        <meta name="descriptiom" content="Lists in HTML">
+        <meta name="author" content="Rishabh Sharma">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h1 {
+                color:blue;
+                text-align: center;
+                background-color: seashell;
+                }
+            body {
+                border: 2px dotted red;
+                padding: 30px;
+                margin: 20px;
+                }
+            
+            .hl li {
+                float: left;
+            }
+            .hl li a {
+                text-decoration: none;
+                display: block;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <h1>Lists in HTML</h1>
+        <!--Unordered List-->
+        <ul style="list-style-type: square;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <!--Ordered List-->
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <!--HTML description List-->
+        <dl>
+            <dt>Juice</dt>
+            <dd>- it is made up of fruits</dd>
+            <dt>Milk Shake</dt>
+            <dd>- it is made up of milk and mangoes.</dd>
+        </dl>
+        <!--Horizontal list with CSS-->
+        <!--In the below ul tag overflow property is added beacuse when we float li and a elements the actual height and width of the
+        ul element changes, so by adding overflow makes background-color property applicable-->
+        <ul class="hl" style="background-color: red; list-style-type: none; margin: 0; padding: 0; overflow: auto;">
+            <li><a href="#">News</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+        <ol type="1">
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+            <li>Saturday</li>
+            <li>Sunday</li>
+        </ol>
+        <ol type="A">
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+            <li>Saturday</li>
+            <li>Sunday</li>
+        </ol>
+        <ol type="I">
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+            <li>Saturday</li>
+            <li>Sunday</li>
+        </ol>
+        <ol type="i">
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+            <li>Saturday</li>
+            <li>Sunday</li>
+        </ol>
+        <ol start="10">
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+            <li>Saturday</li>
+            <li>Sunday</li>
+        </ol>
+        <iframe src="tables.htm" title="Tables in HTML" height="300" width="300"></iframe>
+        
+
+
+    </body>
+    
+
+</html>

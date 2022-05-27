@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>FORMS in HTML</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="FORMS, HTML">
+    <meta name="author" content="Rishabh Sharma">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <meta name="description" content="FORMS in HTML">
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="" target="" method="post" autocomplete="on" novalidate>
+        <!--Fieldset is used to group related data in form-->
+        <fieldset>
+            <!--legend is used to caption the fieldset data-->
+            <legend>Details:</legend>
+            <!--Input type is text-->
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" autofocus><br /><br />
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname"><br /><br />
+            <!--Input type is radio-->
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label><br /><br />
+            <!--Input type is checkbox-->
+            <input type="checkbox" id="Apache310" name="bike1" value="Apache310">
+            <label for="Apache310">Apache310</label>
+            <input type="checkbox" id="Suzuki" name="bike2" value="Suzuki">
+            <label for="Suzuki">Suzuki</label>
+            <input type="checkbox" id="Honda" name="bike3" value="Honda">
+            <label for="Honda">Honda</label><br /><br />
+            <!--Select Element-->
+            <label for="cars">
+                Choose a car:
+            </label>
+            <select id="cars" name="cars">
+                <option value="toyota">Toyota</option>
+                <option value="kia" selected>KIA</option>
+                <option value="renault">Renault</option>
+                <option value="audi">Audi</option>
+            </select><br />
+            <label for="location">
+                Choose a location:
+            </label>
+            <!--To select multiple values use ctrl-->
+            <select id="location" name="cars" size="2" multiple>
+                <option value="india">India</option>
+                <option value="singapore" selected>Singapore</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+            </select><br />
+            <!--Specifying resize CSS property to none avoids resizing of text area-->
+            <textarea name="details" rows="5" cols="10">
+                Enter some text.
+            </textarea><br />
+            <!--Datalist in HTML-->
+            <input list="browsers" name="browsers">
+            <datalist id="browsers">
+                <option value="InternetExplorer">
+                <option value="Mozilla Firefox">
+                <option value="Google Chrome">
+            </datalist>
+            <button type="button" onclick="alert('Click Me Again!')">Click Me</button>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

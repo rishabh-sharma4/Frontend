@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rishabh Sharma">
+    <meta name="keywords" content="Responsive">
+    <meta name="description" content="Responsive page using CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul {
+            background-color: grey;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            height: 100%;
+            width: 25%;
+            position: fixed;
+        }
+
+        ul li {
+            list-style-type: none;
+            border-bottom: 1px solid white;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 16px 20px;
+            text-align: center;
+
+        }
+
+        .active {
+            background-color: green;
+        }
+
+        li a:hover:not(.active) {
+            background-color: black;
+
+        }
+
+        .content {
+            margin-left: 25%;
+            height: 25%;
+            padding: 1px 16px;
+
+        }
+
+        .dropdown {
+            margin-left: 25%;
+            padding: 1px 16px;
+        }
+
+        .dropdown-content {
+            display: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            background-color: orange;
+            width: 150px;
+        }
+
+        @media screen and (max-width: 900px) {
+            ul {
+                width: 100%;
+                height: auto;
+                display: block;
+                position: static;
+            }
+
+            ul li {
+                border: none;
+                display: inline-block;
+            }
+
+            ul li a {
+                padding: 15px;
+            }
+
+            .content {
+                margin-left: 0;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <div class="content">
+        <h2>Responsive sidenav</h2>
+        <p>text here text here text here</p>
+        <p>text here text here text here</p>
+    </div>
+    <div class="dropdown">
+        <p>hover over me</p>
+        <p class="dropdown-content">Hello World!</p>
+        <p>Hello</p>
+    </div>
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Web Storage in HTML</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Web, Storage">
+        <meta name="author" content="Rishabh Sharma">
+        <meta name="description" content="Web storage in html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <style>
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Web Storage in HTML</h1>
+        <button onclick="incrementCount()" 
+        type="button">Click ME!</button>
+        <div id="count1"></div>
+        <script>
+            function incrementCount(){
+                if(typeof(Storage) !=="undefined") {
+                    if(localStorage.clickcount) {
+                        localStorage.clickcount = Number(localStorage.clickcount)+1;    
+                    } else {
+                        localStorage.clickcount = 1;
+                    }
+                    document.getElementById("count1").innerHTML =
+                    "You have clicked the button " + localStorage.clickcount + " times(s).";
+                } else {
+                    document.getElementById("count1").innerHTML = "Sorry, your browser doesn't support web storage..";
+                }
+            }
+        </script>
+    </body>
+</html>

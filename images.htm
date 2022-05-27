@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Images in HTML</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Rishabh Sharma">
+        <meta name="description" content="Images in HTML">
+        <meta name="keywords" content="HTML, CSS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <link rel="stylesheet" href="practice22.css">
+        <style>
+           body{
+               background-image: url("back2.jpg");
+               background-repeat: no-repeat;
+               background-size: cover;
+               /*background-size: 100% 100%; 
+               this makes background-image stretch to x and y axis*/
+           }
+        </style>
+    </head>
+    <body>
+        <h1>HTML images</h1>
+        <img src="audir8car.jpg" style="height: 50vh; width: 50vw;" alt="audicar">
+        <img src="lambo.jpg" height="290" width="400" alt="lambocar">
+        <img src="laptop.jpg" alt="laptop" usemap="#clickonlaptop">
+        <map name="clickonlaptop">
+            <area shape="rect" coords="147,79,462,276" alt="rectangle" href="https://www.amazon.in"
+            target="_blank">
+        </map>
+        <hr/>
+        <!--To display different pictures for different screen sizes we use picture element-->
+        <picture>
+            <source media="(min-width: 700px)" srcset="one.jpg">
+            <source media="(min-width: 465px)" srcset="2.jpg">
+            <img src="3.jpg">
+        </picture>
+        
+    </body>
+
+</html>

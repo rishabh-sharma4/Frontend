@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>TABLE in HTML</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Rishabh Sharma">
+        <meta name="keywords" content="HTML, CSS, TABLE">
+        <meta name="description" content="Table in HTML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <link rel="stylesheet" href="practice22.css">
+        <style>
+            body{
+                background-image: url("backgroundimg.jpg");
+                box-sizing: border-box;
+            }
+            table,th,td{
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+            th,td{
+                padding: 10px;
+            }
+            #t01{
+                background-color: white;
+                
+            }
+            #t02 tr:nth-child(even) {
+                background-color: white;
+                
+            }
+            #t02 tr:nth-child(odd) {
+                background-color: gray
+            }
+            #t02 th {
+                background-color:black;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tables in HTML</h1>
+        <table id="t02">
+            <caption>Normal Table</caption>
+            <tr>
+                <th>Full Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>Miller</td>
+                <td>23</td>
+            </tr>
+        </table>
+        <br/>
+
+        <table>
+            <caption>Rowspan Table</caption>
+            <tr>
+                <th rowspan="2">Full Name</th>
+                <td>John</td>
+            </tr>
+            <tr>
+                <td>Doe</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Address</th>
+                <td>New</td>
+            </tr>
+            <tr>
+                <td>Delhi</td>
+            </tr>
+        </table>
+        <br/>
+
+        <table id="t01">
+            <caption>Colspan Table</caption>
+            <tr>
+                <th colspan="2">Full Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Noton</th>
+                <td>Patrick</th>
+                <td>30</td>
+            </tr>
+        </table>
+    </body>
+
+</html>

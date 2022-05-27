@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Layout in HTML</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rishabh Sharma">
+    <meta name="description" content="Layout in HTML">
+    <meta name="keywords" content="Layout, HTML">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+            background-color: seashell;
+        }
+
+        body {
+            border: 2px dotted red;
+            padding: 15px;
+            margin: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: aquamarine;
+            border: 2px solid red;
+            font-size: 35px;
+        }
+        
+        nav {
+            width: 30%;
+            background-color: yellowgreen;
+            padding: 15px;
+            float: left;
+            height: 300px;
+        }
+        nav ul {
+            list-style-type: none;
+        }
+        article {
+            float: left;
+            padding: 15px;
+            width: 70%;
+            height: 300px;
+            background-color: wheat;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer {
+            padding: 15px;
+            text-align: center;
+            color: red;
+            background-color: yellow;
+        }
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Layouts in HTML</h1>
+    <p>The layout will demonstrate the view of a HTML page</p>
+    <header>
+        <h2>India</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">New Delhi</a></li>
+                <li><a href="#">Pune</a></li>
+                <li><a href="#">Bangalore</a></li>
+                <li><a href="#">Chennai</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h3>India</h3>
+            <p>India is world's largest democracy. Situated at South Asia,
+                 covered with water on 3 sides.</p>
+            <p>There are several states in India, different 
+                languages are spoken in different parts of the country.</p>
+        </article>
+    </section>
+    <footer>
+        <p>Footer Section</p>
+    </footer>
+</body>
+
+</html>
